@@ -14,61 +14,60 @@
     <!--------------------------------------------
         Navigation bar 
     ---------------------------------------------->
-    <nav class="navbar navbar-expand-sm  navbar-dark">
-        <!-- Main container for navbar -->
-        <div class="container-fluid justify-content-space-around">
-            <!-- Container for title and menus columns -->
-            <div class="d-inline-flex flex-column p-2">
-                <!-- Main title -->
-                <div class="container" width="50px">
-                    <span class="main-title">Laboratorio de Electronica</span>
-                </div>
-                <!-- Navigation container -->
-                <div class="container" width="50px">
-                    <!-- Button that appears when the screen size is too small -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapsibleNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <!-- Container displayed when the screen size too small -->
-                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                        <!-- 
+    <nav class="navbar navbar-expand-sm navbar-dark">
+        <!-- 
+            container for the navigation menu
+            Became a flex container with columns on large devices 
+        -->
+        <div class="d-lg-flex flex-lg-column align-items-lg-start container-fluid vertical-align: middle;">
+            <!-- Main title -->
+            <div>
+                <a class="navbar-brand main-title align-middle" href="#">Laboratorio de Electronica</a>
+            </div>
+            <!-- hamburger button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- 
+                Main menu in navbar
+                Contains the list of items showed in the menu 
+            -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <!-- 
                             Navigation list
                             Contains the links to every page in this site 
                             Modify this list accord your needs
                         -->
-                        <ul class="navbar-nav">
-                            <!-- Link to Home -->
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><img src="./images/icons/home.png" class="icons"
-                                        alt=""></a>
-                            </li>
-                            <!-- 
-                                Add more li items if you need a link to another page 
-                                use the class nav-item dropdown if you need a menu
-                            -->
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button"
-                                    data-bs-toggle="dropdown">Vales</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Registro</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button"
-                                    data-bs-toggle="dropdown">Inventario</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Editar</a></li>
-                                </ul>
-                            </li>
+                <ul class="navbar-nav align-items-end">
+                    <!-- Link to Home -->
+                    <li class="d-none d-md-block nav-item">
+                        <a class="nav-link" href="#"><img src="./images/icons/home.png" class="icons" alt=""></a>
+                    </li>
+                    <!-- 
+                        Add more li items if you need a link to another page 
+                        use the class nav-item dropdown if you need a menu
+                     -->
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown">Vales</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Registro</a></li>
                         </ul>
-                    </div>
-                </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown">Inventario</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Editar</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
-            <!-- Main logo -->
-            <a class="navbar-brand d-none d-lg-block" href="#"><img src="./images/logo.png" class="main-logo"
-                    alt="main logo"></a>
         </div>
+        <!-- main logo -->
+        <a class="navbar-brand d-none d-lg-block" href="#"><img src="./images/logo.png" class="main-logo"
+                alt="main logo"></a>
     </nav>
 
     <!------------------------------------------------ 

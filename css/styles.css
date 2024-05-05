@@ -30,6 +30,13 @@ body {
   font-size: 2rem;
 }
 
+@media (max-width: 470px) {
+  .main-title {
+    color: whitesmoke;
+    font-size: 1.5rem;
+  }
+}
+
 .main-logo {
   width: var(--main-logo-width);
   height: var(--main-logo-height);
