@@ -1,21 +1,49 @@
-.navbar {
-    max-height: 100px;
-  }
+/********************
+  Global style variables used in the whole document
+  Put any variable you need in here so its easy to update when
+  a change its needed
+ ********************/
+:root {
+  --main-logo-height: 100px;
+  --main-logo-width: 300px;
 
-  .main-title {
-    color: whitesmoke;
-    font-size: 2rem;
-  }
+  --nav-links-color: rgba(245, 245, 245, 0.8);
 
-  .main-logo {
-    width: 300px;
-    height: 100px;
-    min-width: 200px;
-    min-height: 33px;
-    filter: invert(100%);
-  }
-  
-  .icons {
-    width: 1.3rem;
-    filter: invert(100%);
-  }
+  --primary-bg-color: #000b21;
+
+}
+
+
+/***************
+  Navbar styles
+****************/
+.main-title {
+  color: whitesmoke;
+  font-size: 2rem;
+}
+
+.main-logo {
+  width: var(--main-logo-width);
+  height: var(--main-logo-height);
+  min-width: 200px;
+  min-height: 33px;
+  filter: invert(100%);
+}
+
+.icons {
+  width: 1.3rem;
+  filter: invert(100%);
+}
+
+.nav-link {
+  font-size: 1.02rem !important;
+  color: var(--nav-links-color) !important;
+}
+
+.nav-item{
+  text-align: right;
+}
+
+.bg-itsf {
+  background-color: var(--primary-bg-color);
+}
