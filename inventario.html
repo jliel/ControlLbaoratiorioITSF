@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <!--------------------------------------------
+        Navigation bar 
+    ---------------------------------------------->
+    <nav class="navbar navbar-expand-sm  bg-dark navbar-dark">
+        <!-- Main container for navbar -->
+        <div class="container-fluid justify-content-space-around">
+            <!-- Container for title and menus columns -->
+            <div class="d-inline-flex flex-column p-2">
+                <!-- Main title -->
+                <div class="container" width="50px">
+                    <span class="main-title">Laboratorio de Electronica</span>
+                </div>
+                <!-- Navigation container -->
+                <div class="container" width="50px">
+                    <!-- Button that appears when the screen size is too small -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- Container displayed when the screen size too small -->
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <!-- 
+                            Navigation list
+                            Contains the links to every page in this site 
+                            Modify this list accord your needs
+                        -->
+                        <ul class="navbar-nav">
+                            <!-- Link to Home -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><img src="./images/icons/home.png" class="icons"
+                                        alt=""></a>
+                            </li>
+                            <!-- 
+                                Add more li items if you need a link to another page 
+                                use the class nav-item dropdown if you need a menu
+                            -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown">Vales</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Registro</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown">Inventario</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Editar</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Main logo -->
+            <a class="navbar-brand" href="#"><img src="./images/logo.png" class="main-logo" alt="main logo"></a>
+        </div>
+    </nav>
+
+    <!------------------------------------------------ 
+        Main container,
+        Put all the page content here 
+    --------------------------------------------------->
+    <div class="container d-flex">
+        <div class="title-bg">
+            <h1>Registro de vales</h1>
+        </div>
+    </div>
+
+</body>
+
+</html>
