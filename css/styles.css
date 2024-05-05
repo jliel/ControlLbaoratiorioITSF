@@ -13,10 +13,18 @@
 
 }
 
+body {
+  color: whitesmoke !important;
+}
+
 
 /***************
   Navbar styles
 ****************/
+.navbar {
+  background-color: var(--primary-bg-color) !important;
+}
+
 .main-title {
   color: whitesmoke;
   font-size: 2rem;
@@ -31,8 +39,12 @@
 }
 
 .icons {
-  width: 1.3rem;
+  width: 1.1rem;
   filter: invert(100%);
+}
+
+.icons-b {
+  width: 1.1rem;
 }
 
 .nav-link {
@@ -44,6 +56,38 @@
   text-align: right;
 }
 
+/************
+  General styles
+*************/
+
 .bg-itsf {
   background-color: var(--primary-bg-color);
+}
+
+tr:nth-child(even){
+  background-color: var(--primary-bg-color);
+}
+
+.title-bg {
+  background-color: var(--primary-bg-color);
+  border-radius: 10px;
+}
+
+.card-itsf {
+  border: 4px solid var(--primary-bg-color) !important;
+}
+
+/************
+  Registro vales
+**************/
+.filters {
+  max-width: 300px;
+}
+
+.material-card {
+  max-width: 300px;
+}
+
+.btn-filter {
+  height: 50px;
 }

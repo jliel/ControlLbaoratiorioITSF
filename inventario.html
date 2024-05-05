@@ -14,7 +14,7 @@
     <!--------------------------------------------
         Navigation bar 
     ---------------------------------------------->
-    <nav class="navbar navbar-expand-sm  bg-dark navbar-dark">
+    <nav class="navbar navbar-expand-sm  navbar-dark">
         <!-- Main container for navbar -->
         <div class="container-fluid justify-content-space-around">
             <!-- Container for title and menus columns -->
@@ -66,7 +66,8 @@
                 </div>
             </div>
             <!-- Main logo -->
-            <a class="navbar-brand" href="#"><img src="./images/logo.png" class="main-logo" alt="main logo"></a>
+            <a class="navbar-brand d-none d-lg-block" href="#"><img src="./images/logo.png" class="main-logo"
+                    alt="main logo"></a>
         </div>
     </nav>
 
@@ -74,11 +75,80 @@
         Main container,
         Put all the page content here 
     --------------------------------------------------->
-    <div class="container d-flex">
-        <div class="title-bg">
-            <h1>Registro de vales</h1>
+    <div class="container d-flex flex-column gap-2">
+        <!-- Title -->
+        <div class="title-bg mt-3 p-2 d-inline-block w-50 m-auto text-center">
+            <h2 class="">Registro de Vales</h1>
         </div>
-    </div>
+        <!-- Table container -->
+        <div class="card card-itsf p-2">
+            <!-- Main table for vales -->
+            <table class="table">
+                <thead class=" table-dark">
+                    <tr>
+                        <th style="background-color: #000b21;">Folio</th>
+                        <th style="background-color: #000b21;">Fecha</th>
+                        <th style="background-color: #000b21;">Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>123</td>
+                        <td>Example</td>
+                        <td>Activo</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- container for filter div -->
+            <div class="card col-sm-6 p-2 gap-1 d-flex align-items-start">
+                <h5 class="card-title">Filtrar</h5>
+                <div class="input-group flex-nowrap">
+                    <span class="input-group-text" id="addon-wrapping"><img src="./images/icons/magnifier.png"
+                            class="icons-b" alt=""></span>
+                    <input type="date" class="form-control" placeholder="Username" aria-label="Username"
+                        aria-describedby="addon-wrapping">
+                </div>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Estado</option>
+                    <option value="1">Activo</option>
+                    <option value="2">Cerrado</option>
+                </select>
+                <button type="button" class="btn btn-success">Filtrar</button>
+            </div> <!-- end filter container -->
+        </div> <!-- end table container -->
+
+        <!-- Vale information container -->
+        <div class="d-flex flex-column flex-sm-row  gap-1">
+            <!-- Material table container -->
+            <div class="card col-sm-5 card-itsf p-2">
+                <div class="d-flex justify-content-between align-text-bottom">
+                    <h3>Material</h3>
+                    <span>Folio:</span>
+                </div>
+                <!-- Material table for Material -->
+                <table class="table">
+                    <thead class=" table-dark">
+                        <tr>
+                            <th style="background-color: #000b21;">Descripcion</th>
+                            <th style="background-color: #000b21;">Cantidad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Resistencia</td>
+                            <td>2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> <!-- end material table container -->
+            <!-- Image container -->
+            <div class="card col-sm-7 p-2">
+                <!-- Container for image -->
+                <img src="https://www.prepa5.unam.mx/Home/wp-content/uploads/2022/11/Credencial-interna.png" alt="">
+            </div> <!-- end image container -->
+        </div> <!-- end vale information container -->
+    </div> <!-- end main container -->
+
 
 </body>
 
