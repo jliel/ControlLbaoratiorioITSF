@@ -7,6 +7,9 @@
   --main-logo-height: 100px;
   --main-logo-width: 300px;
 
+  --main-logo-login-height: 120px;
+  --main-logo-login-width: 300;
+
   --nav-links-color: rgba(245, 245, 245, 0.8);
 
   --primary-bg-color: #000b21;
@@ -59,7 +62,7 @@ body {
   color: var(--nav-links-color) !important;
 }
 
-.nav-item{
+.nav-item {
   text-align: right;
 }
 
@@ -71,7 +74,7 @@ body {
   background-color: var(--primary-bg-color);
 }
 
-tr:nth-child(even){
+tr:nth-child(even) {
   background-color: var(--primary-bg-color);
 }
 
@@ -98,3 +101,116 @@ tr:nth-child(even){
 .btn-filter {
   height: 50px;
 }
+
+/***********
+  Estilos login
+  **********/
+.bg-login {
+  background-color: whitesmoke;
+}
+
+.vertical-center {
+  min-height: 100%;
+  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh;
+  /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+#hide-header2-login {
+  display: none;
+}
+
+#hide-header1-login {
+  display: block;
+}
+
+#hide-banner {
+  display: block;
+}
+
+@media (max-width: 769px) {
+  #first-row {
+    order: 2;
+    border-radius: 0 0 20px 20px;
+  }
+
+  #second-row {
+    order: 1;
+    border-radius: 20px 20px 0 0;
+  }
+
+  #hide-header1-login {
+    display: none;
+  }
+
+  #hide-header2-login {
+    display: block;
+  }
+
+  #hide-banner {
+    display: none;
+  }
+
+}
+
+.header-login {
+  font-size: 1.5rem;
+  font-weight: 600;
+  background: white;
+  border-radius: 0.5rem;
+}
+
+.login-form {
+  background-color: white;
+  border-radius: 0.5rem;
+}
+
+.card {
+  margin-bottom: 0 !important;
+}
+
+.main-logo-login {
+  width: var(--main-logo-login-width);
+  height: var(--main-logo-login-height);
+  min-width: 200px;
+  min-height: 33px;
+  filter: invert(100%);
+}
+
+.btn-login {
+  font-size: 1.2rem;
+  background-color: #000b21;
+  border: none;
+}
+
+.arrow-bg {
+  width: 2rem;
+  background-color: whitesmoke;
+  border-radius: 50%;
+}
+.banner-login {
+  background-color: #000b21;
+  max-width: 700px;
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+@media (min-width: 770px) {
+  #second-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .banner-login {
+    background-color: #000b21;
+    max-width: 800px;
+    padding: 2rem;
+    border-radius: 20px;
+  }
+}
+
+
