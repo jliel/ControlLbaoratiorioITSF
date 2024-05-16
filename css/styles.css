@@ -214,3 +214,27 @@ tr:nth-child(even) {
 }
 
 
+.form-label {
+  font-weight: 600 !important;
+}
+
+.form-control::placeholder {
+  font-size: 0.8rem;
+}
+
+.registro-ad {
+  font-size: 0.7rem;
+}
+
+#emailHelp {
+  font-size: 0.7rem;
+}
+
+input, select {
+  background-color: rgb(246, 251, 255) !important;
+  display: flex;
+  align-items: center;
+  padding: 0.7rem !important;
+  border-radius: 18px !important;
+}
+
